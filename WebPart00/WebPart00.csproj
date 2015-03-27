@@ -63,6 +63,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VisualWebPart1.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebPartNoVisual\WebPartNoVisual.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\Feature1\Feature1.feature">
@@ -79,6 +80,10 @@
       <SharePointProjectItemId>{ab8d6f57-f035-488e-bfc3-750f417de8bb}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPart1\VisualWebPart1.webpart" />
+    <None Include="WebPartNoVisual\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae2320e0-3ea1-4db5-bbd6-84a5a771c90d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartNoVisual\WebPartNoVisual.webpart" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -90,6 +95,7 @@
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>VisualWebPart1.ascx.g.cs</LastGenOutput>
     </Content>
+    <Content Include="WebPartNoVisual\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
